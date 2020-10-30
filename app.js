@@ -639,17 +639,11 @@
                     case 'connected':
                         {
                             if (e.session == oSipSessionRegister) {
-                                //txtRegStatus.innerHTML = "<i>" + e.description + "</i>";
                             }
                             else if (e.session == oSipSessionCall) {
                                 stopRingTone();
                                 softphoneStatusIncall();
                                 eventsCall('Em ligação');
-
-                                // bsuca-protocolo
-
-                                //softphoneStatus('Ocupado');
-                                //softphoneStatusLigacao(e.description);
 
                             }
                             break;
